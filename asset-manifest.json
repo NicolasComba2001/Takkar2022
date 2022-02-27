@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Takkar2022/static/css/main.f763cd37.css",
+    "main.js": "/Takkar2022/static/js/main.1af43a6d.js",
+    "static/js/787.2dc071a7.chunk.js": "/Takkar2022/static/js/787.2dc071a7.chunk.js",
+    "index.html": "/Takkar2022/index.html",
+    "main.f763cd37.css.map": "/Takkar2022/static/css/main.f763cd37.css.map",
+    "main.1af43a6d.js.map": "/Takkar2022/static/js/main.1af43a6d.js.map",
+    "787.2dc071a7.chunk.js.map": "/Takkar2022/static/js/787.2dc071a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f763cd37.css",
+    "static/js/main.1af43a6d.js"
+  ]
+}
