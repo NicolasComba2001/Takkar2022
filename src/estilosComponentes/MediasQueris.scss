@@ -1,0 +1,172 @@
+@media(min-width: 540px){
+    .seccionProducto__img, .seccionHistoria__img{width: 80%;}
+    .sliderImg__img{object-fit: contain; height: 400px;}
+}
+@media(min-width: 760px){
+    .menuItemsList{font-size: 5em;}
+    .seccionProducto{
+        flex-direction: row-reverse;
+    }
+    .seccionHistoria{
+        flex-direction: row;
+    }
+    .seccionProducto__img, .seccionHistoria__img{height: 475px;}
+    .seccionProductoTexto__btn, .seccionHistoriaTexto__btn,.galeria__btn{
+        width: 120px;
+        height: 40px;
+    }
+    .galeriaItem{
+        width: 250px;
+        height: 300px;
+    }
+    .galeriaTitulo__titulo{
+        font-size: 3em;
+    }.galeriaTitulo__texto{
+        font-size: 2em;
+    }
+    .SeccionDescuentoTexto__titulo {font-size: 4em;}
+    .tienda{justify-content: space-around; flex-direction: row; height: 200px;}
+    .tiendaTexto{width: 50%;}
+    .SeccionFooter{padding: 40px;}
+}
+
+@media(min-width: 1024px){
+    .SeccionFooter{flex-direction: row-reverse;}
+    .footerAyuda, .footerCompania{width: 30%; justify-content: space-around;}
+    .SeccionDescuentoItem{overflow: hidden;}
+    .SeccionDescuentoItem__img{
+        width: 175%;
+        height: 305%;
+    }
+    .SeccionDescuentoTexto{left: 30%;}
+    header{
+        width: 100%;
+        z-index: 100;
+    }
+    .header__icono{display: none;}
+    .menu{
+    background-color: transparent;
+    position: static;
+    width: 100%;
+    height: inherit;
+    transform: translate(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menuItemsList{font-size: 1.2em;}
+.menuItemsList__btn{color: black; font-weight: 800}
+    .menuItems{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuItemsList__btn::before{border: none;}
+    .menuItemsList__btn::before{color: red;}
+    .menuItemsList__btn:hover::before{
+        filter: drop-shadow(0 0 25px red);
+        -webkit-filter: drop-shadow(0 0 25px red);
+    }
+    .logoEscritorio{display: block;
+    text-align: center;
+    width: 15%;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    }
+    .SeccionFooterHC{justify-content: space-around;}
+}
+
+@media(min-width: 1280px){
+    .seccionProducto__img{
+        width: 65%;
+    }
+    .seccionHistoria__img{
+        width: 50%;
+    }
+    .seccionProductoTexto, .seccionHistoriaTexto{
+        width: 40%;
+    }
+    .seccionProductoTexto__titulo, .seccionHistoriaTexto__titulo{
+        font-size: 3.5em;
+    }.seccionProductoTexto__texto{
+        font-size: 1.2em;
+    }
+    .seccionProductoTexto__btn, .seccionHistoriaTexto__btn, .galeria__btn{
+        width: 150px;
+        height: 45px;
+    }
+    .galeriaTitulo__texto{text-align: center;}
+    
+}
+
+@media(min-width: 1900px){
+    .seccionProducto__img{
+        width: 55%;
+    }
+    .seccionProducto__img, .seccionHistoria__img{
+        height: 650px;
+    }
+    .seccionProductoTexto, .seccionHistoriaTexto{
+        width: 25%;
+    }
+    .seccionProductoTexto__titulo, .seccionHistoriaTexto__titulo{
+        font-size: 4.5em;
+    }
+    .seccionProductoTexto__texto{
+        font-size: 1.2em;
+    }
+    .seccionProductoTexto__btn, .seccionHistoriaTexto__btn, .galeria__btn{
+        width: 175px;
+        height: 55px;
+    }
+    .seccionHistoriaTexto__texto{
+        font-size: 1.2em;
+    }
+    .seccionProducto{margin-bottom: 100px;}
+    .galeria{justify-content: center;}
+    .galeriaItem {
+        width: 300px;
+        height: 450px;
+        margin-right: 25px;
+    }
+    .SeccionDescuentoTexto{
+        width: 100%;
+    }
+    .SeccionDescuentoTexto__parrafo{
+        font-size: 1em;
+    }
+    .SliderNueva__titulo{
+        font-size: 2em;
+    }
+    .SliderNueva{
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+    .oferta{
+        width: 130%;
+        height: 415%;
+    }
+    .tienda{
+        height: 250px;
+        width: 70%;
+        margin: auto;
+        border: 5px solid black;
+    }
+    .tienda__titulo{
+        font-size: 3em;
+    }
+    .tiendaTexto{
+        width: 40%;
+    }
+    .tiendaTexto__texto{
+        font-size: 1.2em;
+    }
+    .tiendaTexto__sub{
+        font-weight: 800;
+    }
+    .footerAyuda, .footerCompania{
+        width: 20%;
+    }
+}

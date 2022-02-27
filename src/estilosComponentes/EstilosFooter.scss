@@ -1,0 +1,148 @@
+@mixin caja-flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+.copy{text-align: center; line-height: 2;}
+.footer{
+    background-color: black;
+    color:white;
+}
+.requisitos{display: inline-block; margin-left: 5px}
+.SeccionFooter{
+    @include caja-flex(center, unset ,column );
+    padding: 20px;
+    position: relative;
+    &::after{
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 2px;
+        background-color: rgba(179, 179, 179, 0.973);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+}
+.footerPublicidad{
+    text-align: left;
+    &__titulo{
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 2;
+    }
+    &__texto{
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+}
+.footerPublicidad__btn--text{
+    width: 250px;
+    height: 35px;
+    border: none;
+    margin: 15px 0;
+}
+.footerPublicidad__btn--enviar{
+    width: 140px;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    margin: 15px 0;
+    background-color: white;
+    color: black;
+    transition: box-shadow 1s ease-out;
+            -webkit-transition: box-shadow 1s ease-out;
+            -moz-transition: box-shadow 1s ease-out;
+            -ms-transition: box-shadow 1s ease-out;
+            -o-transition: box-shadow 1s ease-out;
+        &:hover{
+            box-shadow:inset 5.3em 0 0 0 rgba(0, 0, 0, 0.973), inset -5.3em 0 0 0 rgba(0, 0, 0, 0.973);
+            color: white;
+            text-decoration: underline;
+            transition: box-shadow 1s ease-out;
+            -webkit-transition: box-shadow 1s ease-out;
+            -moz-transition: box-shadow 1s ease-out;
+            -ms-transition: box-shadow 1s ease-out;
+            -o-transition: box-shadow 1s ease-out;
+}
+}
+//
+
+.SeccionFooterHC{
+    margin: 10px 0;
+    width: 100%;
+    @include caja-flex(space-between, unset ,row )
+}
+.footerAyuda,.footerCompania{width: 50%;}
+
+.footerAyuda__titulo, .footerCompania__titulo{
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+.footerAyudaList, .footerCompaniaList{
+    list-style: none;
+    &__item{
+        margin: 10px 0;
+        padding: 5px 0;
+        a{
+            &:hover{
+                color: red;
+                text-decoration: underline;
+                }
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.SeccionfooterInfo__titulo{
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 2.5;
+    font-style: italic;   
+    text-decoration: underline; 
+}
+.SeccionfooterInfo__texto{
+    font-size: 1.1em;
+    font-weight: 350;
+    line-height: 1.5;
+}
+
+.footerRedes{
+    @include caja-flex(space-around,center ,row );
+    margin: 20px 0;
+    width: 100%;
+        &__red{
+            box-shadow:0 0 0 1.2em rgba(0, 0, 0, 0);
+            cursor: pointer;
+            &:hover{
+                background-color: red;
+                transition: transform .5s ease-out;
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                -webkit-transition: transform .5s ease-out;
+                -moz-transition: transform .5s ease-out;
+                -ms-transition: transform .5s ease-out;
+                -o-transition: transform .5s ease-out;
+             }
+            width: 25px;
+            height: 25px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            img{width: inherit; height: inherit; object-fit: cover;}
+        }
+}

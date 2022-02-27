@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import Footer from './componentes/Footer';
+import HeaderMenu from "./componentes/HeaderMenu";
+import SeccionDescuento from './componentes/SeccionDescuento';
+import SeccionInicio from './componentes/SeccionInicio';
+import SeccionOferta from './componentes/SeccionOferta';
+import SeccionSlider from './componentes/SeccionSlider';
+import SeccionSliderNuevas from './componentes/SeccionSliderNuevas';
+import SeccionTienda from './componentes/SeccionTienda';
+import './estilosComponentes/MediasQueris.scss';
+library.add(fas)
 
 function App() {
+  useEffect(()=>{
+        
+    AOS.init();
+
+},[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <HeaderMenu></HeaderMenu>
+    <SeccionInicio></SeccionInicio>
+    <SeccionSlider></SeccionSlider>
+    <SeccionDescuento></SeccionDescuento>
+    <SeccionSliderNuevas></SeccionSliderNuevas>
+    <SeccionOferta></SeccionOferta>
+    <SeccionTienda></SeccionTienda>
+    <Footer></Footer>
+    </>
   );
 }
 
